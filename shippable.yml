@@ -1,4 +1,6 @@
-build_image: ingomuellernet/texlive
+build:
+  pre_ci:
+    - docker pull harshjv/texlive-2015
 
 install:
   # Check texlive version
